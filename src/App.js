@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
 class App extends Component {
   constructor() {
@@ -9,18 +9,18 @@ class App extends Component {
   }
 
   makeIncrementer = (amount) => () =>
-    this.setState((prevState) =>({
+      this.setState((prevState) =>({
       count: prevState.count + amount,
     }))
 
-    increment = this.makeIncrementer(1)
+  increment = this.makeIncrementer(1)
 
-    render() {
-      return (
-        <div>
-          <p>How much natalie sucks: {this.state.count}</p>
-          <button className="increment" onClick={this.increment}L>Increment count</button>
-        </div>
+  render() {
+    return (
+      <div>
+        <p>How much natalie sucks: {this.state.count}</p>
+        <button className="increment" onClick={this.increment}L>Increment count</button>
+      </div>
       )
     }
 } 
