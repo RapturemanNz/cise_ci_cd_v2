@@ -8,12 +8,12 @@ class App extends Component {
     }
   }
 
-  increment = this.makeIncrementer(1)
-
   makeIncrementer = (amount) => () =>
     this.setState((prevState) =>({
       count: prevState.count + amount,
     }))
+
+    increment = this.makeIncrementer(1)
 
     render() {
       return (
