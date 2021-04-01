@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   makeIncrementer = (amount) => () =>
-      this.setState((prevState) =>({
+      this.setState((prevState) => ({
       count: prevState.count + amount,
     }))
 
