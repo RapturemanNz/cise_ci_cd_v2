@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   makeIncrementer = (amount) => () =>
-      this.setState((prevState) => ({
+    this.setState((prevState) => ({
       count: prevState.count + amount,
     }))
 
@@ -19,10 +19,10 @@ class App extends Component {
     return (
       <div>
         <p>How much natalie sucks: {this.state.count}</p>
-        <button className="increment" onClick={this.increment}L>Increment count</button>
+        <button className="increment" onClick={increment}L>Increment count</button>
       </div>
-      )
-    }
+    )
+  }
 } 
 
 export default App
